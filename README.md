@@ -38,7 +38,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 2. Describe what it means to be mobile first vs desktop first.
 
-<span style="color:red"></span>
+<span style="color:red">Mobile first development means you start by building the site for mobile phones and then once that's completed you start expanding your viewport and adding more content and images for a full desktop experience. The technical difference is that in mobile first development, media queries are `min-width` and in desktop first development media queries are `max-width`</span>
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
