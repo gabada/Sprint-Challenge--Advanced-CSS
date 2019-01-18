@@ -26,3 +26,25 @@
         transition: 1.5s;
     }
 }
+
+.keyframes(@name; @arguments) {
+	@-moz-keyframes @name { @arguments(); }
+	@-webkit-keyframes @name { @arguments(); }
+	@keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	animation: @arguments;
+}
+
+.animate() {
+    .keyframes(fade-in;{
+        0% { color: red; }
+        25% { color: orange; }
+        100% { color: black; }
+        });
+
+        .animation(fade-in 0.5s linear infinite alternate)
+}

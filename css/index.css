@@ -210,6 +210,42 @@ footer {
 }
 .home .intro h2 {
   padding: 15px;
+  -webkit-animation: fade-in 0.5s linear infinite alternate;
+  -moz-animation: fade-in 0.5s linear infinite alternate;
+  animation: fade-in 0.5s linear infinite alternate;
+}
+@-moz-keyframes fade-in {
+  0% {
+    color: red;
+  }
+  25% {
+    color: orange;
+  }
+  100% {
+    color: black;
+  }
+}
+@-webkit-keyframes fade-in {
+  0% {
+    color: red;
+  }
+  25% {
+    color: orange;
+  }
+  100% {
+    color: black;
+  }
+}
+@keyframes fade-in {
+  0% {
+    color: red;
+  }
+  25% {
+    color: orange;
+  }
+  100% {
+    color: black;
+  }
 }
 .home .intro p {
   padding: 0 15px;
