@@ -22,12 +22,27 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    @media @phone {
+      flex-direction: column;
+    }
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone {
+        &:first-child {
+        width: 91.7%;
+        padding-left: 1rem;
+        }
+        &:nth-child(2) {
+          display: none;
+        }
+        &:nth-child(3) {
+          display: none;
+        }
+      }
     }
   }
 
