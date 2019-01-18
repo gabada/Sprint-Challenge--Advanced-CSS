@@ -1,1 +1,15 @@
 // Mixins Here
+
+.border-radius(@radius) {
+    border-radius: 5px;
+}
+
+.custom-btn(@width, @height, @bg-color, @font-color, @font-size) {
+    .border-radius(5px);
+    width: @width;
+    height: @height;
+    background-color: @bg-color;
+    color:@font-color;
+    cursor: pointer;
+    font-size: @font-size;
+}
