@@ -285,7 +285,7 @@ footer {
   background-color: black;
   color: white;
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 .home .walk .walk-text button:hover {
   background-color: white;
