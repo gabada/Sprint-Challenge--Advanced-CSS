@@ -230,7 +230,7 @@ footer {
 @media (max-width: 500px) {
   .home .space-images img:first-child {
     width: 91.7%;
-    padding-left: 1rem;
+    padding-left: 1.1rem;
   }
   .home .space-images img:nth-child(2) {
     display: none;
