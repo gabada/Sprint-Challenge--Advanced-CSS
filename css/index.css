@@ -177,10 +177,10 @@ p {
   flex-flow: column nowrap;
 }
 .main-navigation .nav {
-  width: 375px;
+  width: 380px;
   display: flex;
   justify-content: space-between;
-  margin-top: 2rem;
+  margin-top: 1.9rem;
 }
 .main-navigation a {
   font-size: 1.6rem;
