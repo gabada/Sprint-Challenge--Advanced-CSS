@@ -1,1 +1,30 @@
 // Navigation code here
+
+.main-navigation {
+    width: 100%;
+    height: 100px;
+    background: @nav-bg;
+    opacity: 0.8;
+    border-bottom: 2px solid @nav-border;
+    position: fixed;
+
+    .nav-container {
+        height: 100%;
+        .center;
+        flex-flow: column nowrap;
+        }
+
+        .nav {
+        width: 380px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1.9rem;
+        }
+
+
+        a {
+            font-size: 1.6rem;
+            color: black;
+            text-decoration: none;
+        }
+}

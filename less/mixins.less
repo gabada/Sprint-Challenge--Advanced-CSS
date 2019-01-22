@@ -1,1 +1,50 @@
 // Mixins Here
+
+.border-radius(@radius) {
+    border-radius: 5px;
+}
+
+.center(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-btn(@width, @height, @bg-color, @font-color, @font-size) {
+    .border-radius(5px);
+    width: @width;
+    height: @height;
+    background-color: @bg-color;
+    color:@font-color;
+    cursor: pointer;
+    font-size: @font-size;
+
+    &:hover {
+        background-color: @font-color;
+        color: @bg-color;
+        border: 1px white solid;
+        transition: 1.5s;
+    }
+}
+
+.keyframes(@name; @arguments) {
+	@-moz-keyframes @name { @arguments(); }
+	@-webkit-keyframes @name { @arguments(); }
+	@keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	animation: @arguments;
+}
+
+.animate() {
+    .keyframes(fade-in;{
+        0% { color: red; }
+        25% { color: orange; }
+        100% { color: black; }
+        });
+
+        .animation(fade-in 0.5s linear infinite alternate)
+}
